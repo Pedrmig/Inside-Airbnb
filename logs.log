@@ -64,3 +64,110 @@ For example, when doing 'df[col].method(value, inplace=True)', try using 'df.met
 2024-06-25 21:48:12,275:WARNING:c:\Users\User\OneDrive\Documentos\GitHub\Inside-Airbnb\.venv\Lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
   return method()
 
+2024-06-25 23:45:56,278:WARNING:c:\Users\User\OneDrive\Documentos\GitHub\Inside-Airbnb\.venv\Lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-06-25 23:48:56,023:WARNING:c:\Users\User\OneDrive\Documentos\GitHub\Inside-Airbnb\.venv\Lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-06-26 09:20:31,910:WARNING:C:\Users\User\AppData\Local\Temp\ipykernel_39280\581838604.py:3: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  df['host_name'].fillna('Unknown',inplace=True)
+
+2024-06-26 09:20:31,913:WARNING:C:\Users\User\AppData\Local\Temp\ipykernel_39280\581838604.py:4: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  df['price'].fillna((df['price'].mean()),inplace=True)
+
+2024-06-26 09:20:31,913:WARNING:C:\Users\User\AppData\Local\Temp\ipykernel_39280\581838604.py:5: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  df['reviews_per_month'].fillna(0,inplace=True)
+
+2024-06-26 09:20:45,787:WARNING:c:\Users\User\OneDrive\Documentos\GitHub\Inside-Airbnb\.venv\Lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-06-26 09:21:03,743:WARNING:c:\Users\User\OneDrive\Documentos\GitHub\Inside-Airbnb\.venv\Lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-06-26 09:23:59,554:WARNING:c:\Users\User\OneDrive\Documentos\GitHub\Inside-Airbnb\.venv\Lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-06-26 09:24:03,818:WARNING:c:\Users\User\OneDrive\Documentos\GitHub\Inside-Airbnb\.venv\Lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-06-26 09:40:14,847:WARNING:c:\Users\User\OneDrive\Documentos\GitHub\Inside-Airbnb\.venv\Lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-06-26 09:42:59,870:WARNING:C:\Users\User\AppData\Local\Temp\ipykernel_39280\876599508.py:4: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  df['price'].fillna((df['price'].mean()),inplace=True)
+
+2024-06-26 09:42:59,870:WARNING:C:\Users\User\AppData\Local\Temp\ipykernel_39280\876599508.py:5: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  df['reviews_per_month'].fillna(0,inplace=True)
+
+2024-06-26 09:42:59,872:WARNING:c:\Users\User\OneDrive\Documentos\GitHub\Inside-Airbnb\.venv\Lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-06-26 09:44:17,886:WARNING:c:\Users\User\OneDrive\Documentos\GitHub\Inside-Airbnb\.venv\Lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-06-26 09:48:26,913:WARNING:c:\Users\User\OneDrive\Documentos\GitHub\Inside-Airbnb\.venv\Lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-06-26 09:48:35,103:WARNING:c:\Users\User\OneDrive\Documentos\GitHub\Inside-Airbnb\.venv\Lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-06-26 09:52:57,661:WARNING:c:\Users\User\OneDrive\Documentos\GitHub\Inside-Airbnb\.venv\Lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-06-26 09:59:08,341:WARNING:C:\Users\User\AppData\Local\Temp\ipykernel_39280\151389895.py:4: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  df['price'].fillna((df['price'].mean()),inplace=True)
+
+2024-06-26 09:59:08,341:WARNING:C:\Users\User\AppData\Local\Temp\ipykernel_39280\151389895.py:5: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  df['reviews_per_month'].fillna(0,inplace=True)
+
+2024-06-26 09:59:08,343:WARNING:c:\Users\User\OneDrive\Documentos\GitHub\Inside-Airbnb\.venv\Lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-06-26 09:59:16,371:WARNING:c:\Users\User\OneDrive\Documentos\GitHub\Inside-Airbnb\.venv\Lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-06-26 09:59:20,435:WARNING:c:\Users\User\OneDrive\Documentos\GitHub\Inside-Airbnb\.venv\Lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-06-26 09:59:32,753:WARNING:c:\Users\User\OneDrive\Documentos\GitHub\Inside-Airbnb\.venv\Lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
+2024-06-26 11:32:12,843:WARNING:c:\Users\User\OneDrive\Documentos\GitHub\Inside-Airbnb\.venv\Lib\site-packages\IPython\core\formatters.py:347: FutureWarning: Index.format is deprecated and will be removed in a future version. Convert using index.astype(str) or index.map(formatter) instead.
+  return method()
+
