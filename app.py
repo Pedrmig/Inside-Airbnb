@@ -126,31 +126,28 @@ if selected == "Información":
 # PAGE 3----------------------------------
 if selected == "Precio":
     st.markdown('### Precios')
-    st.markdown('Abajo tenemos un mapa con el precio medio por vecindad, puede hacer zoom para ver más detalles:')
+    st.markdown('Abajo tenemos um mapa con el precio medio por vecindad, puede hacer zoom para ver más detalles:')
     
     with open("maps/map3.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
-    components.html(html_data, height=450, width=700)
+    components.html(html_data, height=450)
 
     st.markdown('Precio promedio por dia para 2 personas')    
     with open("graficos/Average_Price_2_persons.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
-    components.html(html_data, height=450, width=700)
+    components.html(html_data, height=450)
         
     st.markdown('Precio promedio por vecindario')
-    st.image('graficos/precio_medio_vecindario.png', width=700)
-
+    st.image('graficos/precio_medio_vecindario.png', use_column_width=True)
     with open("graficos/precio_vecindario.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
-    components.html(html_data, height=450, width=700)
+    components.html(html_data, height=450)
 
     st.markdown('Precio promedio por vecindario y tipo de habitación')
     with open("graficos/precio_habitacion_vecindario_box.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
-    components.html(html_data, height=450, width=700)
-
-    st.image('graficos/precioxhabitacion_swarmplot.png', width=700)
-
+    components.html(html_data, height=450)
+    st.image('graficos/precioxhabitacion_swarmplot.png', use_column_width=True)
 
 # PAGE 4----------------------------------
 if selected == "Opiniones":
