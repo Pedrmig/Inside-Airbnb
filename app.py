@@ -296,25 +296,28 @@ css = """
         color: White;  
         margin-top: 10px;
     }
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
     .centered-text-pg1 {
         text-align: center;
         font-size: 2em;
         font-weight: bold;
         margin-bottom: 20px;
-        font-family: 'Poppins', sans-serif;
-        color: #333;
+        font-family: 'Lato', sans-serif;
+        color: #fff; /* Branco para melhor contraste em fundo preto */
     }
     .justified-text-pg1 {
         text-align: justify;
         font-size: 1.2em;
         line-height: 1.5;
         margin-bottom: 15px;
-        font-family: 'Poppins', sans-serif;
-        color: #555;
+        font-family: 'Lato', sans-serif;
+        color: #ddd; /* Cinza claro para melhor legibilidade em fundo preto */
+        width: 80%; /* Ocupa 80% da largura da tela */
+        margin-left: auto;
+        margin-right: auto;
     }
     .container {
-        width: 60%;
+        width: 100%;
         margin: 0 auto;
     }
 </style>
