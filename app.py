@@ -178,7 +178,7 @@ if selected == "Power Bi":
             ## Este es un dashboard de PowerBI incrustado en una aplicación de Streamlit.
                 Puedes interactuar con el dashboard directamente aquí.
         """)
-    powerbi_url = "https://app.powerbi.com/view?r=eyJrIjoiMDJjYmRmYWQtNmVmOS00ZGI4LWI2MWEtOTUxZmJkOWZhNDY4IiwidCI6IjhhZWJkZGI2LTM0MTgtNDNhMS1hMjU1LWI5NjQxODZlY2M2NCIsImMiOjl9"
+    powerbi_url = "https://app.powerbi.com/view?r=eyJrIjoiZmI2YmVjNmUtZjI3My00OTVmLWE1NGItNzY0ODNhNmJmM2M1IiwidCI6IjhhZWJkZGI2LTM0MTgtNDNhMS1hMjU1LWI5NjQxODZlY2M2NCIsImMiOjl9"
     st.markdown(f"""
             <iframe width="100%" height="600" src="{powerbi_url}" frameborder="0" allowFullScreen="true"></iframe>
         """, unsafe_allow_html=True)
