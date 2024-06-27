@@ -5,4 +5,3 @@ streamlit
 joblib
 scikit-learn
 streamlit_option_menu
-train_model_forest
