@@ -126,7 +126,7 @@ if selected == "Información":
 # PAGE 3----------------------------------
 if selected == "Precio":
     st.markdown('### Precios')
-    st.markdown('Abajo tenemos um mapa con el precio medio por vecindad, puede hacer zoom para ver más detalles:')
+    st.markdown('Abajo tenemos un mapa con el precio medio por vecindad, puede hacer zoom para ver más detalles:')
     
     with open("maps/map3.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
@@ -138,7 +138,8 @@ if selected == "Precio":
     components.html(html_data, height=450)
         
     st.markdown('Precio promedio por vecindario')
-    st.image('graficos/precio_medio_vecindario.png', use_column_width=True)
+    st.image('graficos/precio_medio_vecindario.png', use_column_width=True, output_format='PNG')
+
     with open("graficos/precio_vecindario.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
     components.html(html_data, height=450)
@@ -147,9 +148,11 @@ if selected == "Precio":
     with open("graficos/precio_habitacion_vecindario_box.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
     components.html(html_data, height=450)
-    st.image('graficos/precioxhabitacion_swarmplot.png', use_column_width=True)
 
-# PAGE 3----------------------------------
+    st.image('graficos/precioxhabitacion_swarmplot.png', use_column_width=True, output_format='PNG')
+
+
+# PAGE 4----------------------------------
 if selected == "Opiniones":
 
     st.markdown("<p class='subtitles'>Puntaje Promedio de Revisión de Ubicación por Vecindario (con al menos 10 revisiones)</p>", unsafe_allow_html=True)
@@ -173,7 +176,7 @@ if selected == "Opiniones":
     st.image('graficos/wordcloud.png', use_column_width=True)
 
 
-# PAGE 4----------------------------------
+# PAGE 5----------------------------------
 if selected == "Power Bi":
     st.markdown("""
             ## Este es un dashboard de PowerBI incrustado en una aplicación de Streamlit.
@@ -184,7 +187,7 @@ if selected == "Power Bi":
             <iframe width="100%" height="600" src="{powerbi_url}" frameborder="0" allowFullScreen="true"></iframe>
         """, unsafe_allow_html=True)
 
-# PAGE 5----------------------------------
+# PAGE 6----------------------------------
 if selected == "Predictor de Precios": 
 
     # Función para predecir precio
