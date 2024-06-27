@@ -81,8 +81,8 @@ if selected == "Informacion":
                 
         ## 2. Government services
 
-        private = pd.read_csv("private.csv")
-        host_private = pd.read_csv("host_private.csv")
+        private = pd.read_csv("csv_app/private.csv")
+        host_private = pd.read_csv("csv_app/host_private.csv")
 
         st.markdown('### Analítica al servicio del gobierno')
         st.write('Hawaii tiene regulaciones diferentes de un condado a otro, y todas ellas están diseñadas para limitar el número de propiedades en alquiler. (https://www.hostaway.com/blog/airbnb-rules-in-hawaii/)')
@@ -99,14 +99,14 @@ if selected == "Informacion":
         st.markdown('### Efectos no deseados de los anfitriones profesionales?')
         
         st.write('Cantidad de Anuncions por Anfitrión')
-        freq = pd.read_csv("freq.csv")
+        freq = pd.read_csv("csv_app/freq.csv")
         host_prop = freq.groupby(['num_host_listings']).size().reset_index(name='count').transpose()
         host_prop.columns = host_prop.iloc[0]
         host_prop = host_prop.drop(host_prop.index[0])
         host_prop
 
         st.write('Algunos Anfitriones son claramente profesionales')
-        freq = pd.read_csv("freq2.csv")
+        freq = pd.read_csv("csv_app/freq2.csv")
         freq = freq.sort_values(by=['num_host_listings'], ascending=False)
         freq = freq[freq['num_host_listings'] >= 20]
         freq

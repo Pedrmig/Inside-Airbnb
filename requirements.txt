@@ -1,23 +1,8 @@
-numpy
 pandas
-seaborn
-matplotlib.pyplot
-os
-json
-warnings
-
-
-# mapas interactivos
-folium
-geopandas
-
-#to make the plotly graphs
-plotly.graph_objs
-chart_studio.plotly
+matplotlib
 cufflinks
-
-
-#text mining
-nltk.tokenize
-nltk.corpus
+streamlit
+joblib
 scikit-learn
+streamlit_option_menu
+train_model_forest
