@@ -75,7 +75,7 @@ if selected == "Informacion":
         st.image('graficos/tipos_propriedades.png', use_column_width=True)
 
         st.write('Número de Alojados')
-        st.image('graficos/acomodates.png', use_column_width=True)
+        st.image('graficos/Acomodates.png', use_column_width=True)
 
     with tab2:
                 
@@ -119,7 +119,8 @@ if selected == "Informacion":
         st.markdown("<p class='justified-text'>Hawaii es un archipiélago de islas volcánicas en el Océano Pacífico. Las islas son el resultado de la actividad volcánica que comenzó hace millones de años.</p>", unsafe_allow_html=True)
         st.markdown("<p class='justified-text'>La isla de Hawaii es el volcán más grande y activo del mundo.</p>", unsafe_allow_html=True)
         st.markdown("<p class='justified-text'>Es un volcán en escudo, lo que significa que es un volcán grande y de forma redondeada.</p>", unsafe_allow_html=True)
-        st.image("https://static.temblor.net/wp-content/uploads/2018/05/hawaii-sp-7.jpg", use_column_width=True)
+        volcane_url = "https://static.temblor.net/wp-content/uploads/2018/05/hawaii-sp-7.jpg", use_column_width=True
+        st.image(volcane_url, use_column_width=True)
 
 
 # PAGE 3----------------------------------
