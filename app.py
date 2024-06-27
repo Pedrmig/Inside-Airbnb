@@ -16,12 +16,12 @@ import streamlit.components.v1 as components
 st.set_page_config(
     page_title="Airbnb: Hawaii",
     page_icon="🌅",
-    layout="centered")
+    layout="wide")
 
 with st.sidebar:
     selected = option_menu(
         menu_title = "Main Menu",
-        options = ["Home","Informacion","Precio",'Avaliaciones',"Power Bi", 'Predictor de Precios'],
+        options = ["Home","Informacion","Precio",'Evaluaciones',"Power Bi", 'Predictor de Precios'],
         icons = ["house","book",'coin','table',"bar-chart","calculator"],
         menu_icon = "cast",
         default_index = 0,)
@@ -53,10 +53,10 @@ if selected == "Informacion":
 
     # ---------------------TABS (pestañas)----------------------#
     tab1, tab2, tab3 = st.tabs(
-        ['Accomodations','Potencial Ilegales','Vulcanes']) 
+        ['Acomodaciones','Potencial Ilegales','Volcanes']) 
     with tab1:
         
-        ##  1. accommodations
+        ##  1. Acomodaciones
 
         st.markdown('### Acomodaciones')
         
@@ -114,7 +114,7 @@ if selected == "Informacion":
     with tab3:
             
         # 4. Vulcanes
-        st.markdown('### Vulcanes') 
+        st.markdown('### Volcanes') 
         st.markdown("<p class='justified-text'>Mismo que poco probable que un volcán entre en erupción en Hawaii, es importante saber que la isla es un volcán en sí mismo.</p>", unsafe_allow_html=True)
         st.markdown("<p class='justified-text'>Hawaii es un archipiélago de islas volcánicas en el Océano Pacífico. Las islas son el resultado de la actividad volcánica que comenzó hace millones de años.</p>", unsafe_allow_html=True)
         st.markdown("<p class='justified-text'>La isla de Hawaii es el volcán más grande y activo del mundo.</p>", unsafe_allow_html=True)
@@ -131,25 +131,25 @@ if selected == "Precio":
         html_data = f.read()
     components.html(html_data, height=450)
 
-    st.markdown('Precio medio por dia para 2 personas')    
+    st.markdown('Precio promedio por dia para 2 personas')    
     with open("graficos/Average_Price_2_persons.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
     components.html(html_data, height=450)
         
-    st.markdown('Precio medio por vecindario')
+    st.markdown('Precio promedio por vecindario')
     st.image('graficos/precio_medio_vecindario.png', use_column_width=True)
     with open("graficos/precio_vecindario.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
     components.html(html_data, height=450)
 
-    st.markdown('Precio medio por vecindario y tipo de habitación')
+    st.markdown('Precio promedio por vecindario y tipo de habitación')
     with open("graficos/precio_habitacion_vecindario_box.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
     components.html(html_data, height=450)
     st.image('graficos/precioxhabitacion_swarmplot.png', use_column_width=True)
 
 # PAGE 3----------------------------------
-if selected == "Avaliaciones":
+if selected == "Evaluaciones":
 
     st.markdown("<p class='subtitles'>Puntaje Promedio de Revisión de Ubicación por Vecindario (con al menos 10 revisiones)</p>", unsafe_allow_html=True)
     st.image('graficos/review_score_price.png', use_column_width=True)
@@ -173,7 +173,15 @@ if selected == "Avaliaciones":
 
 
 # PAGE 4----------------------------------
-#if selected == "Power Bi":
+if selected == "Power Bi":
+    st.markdown("""
+            ## Este es un dashboard de PowerBI incrustado en una aplicación de Streamlit.
+                Puedes interactuar con el dashboard directamente aquí.
+        """)
+    powerbi_url = "https://app.powerbi.com/view?r=eyJrIjoiMDJjYmRmYWQtNmVmOS00ZGI4LWI2MWEtOTUxZmJkOWZhNDY4IiwidCI6IjhhZWJkZGI2LTM0MTgtNDNhMS1hMjU1LWI5NjQxODZlY2M2NCIsImMiOjl9"
+    st.markdown(f"""
+            <iframe width="100%" height="600" src="{powerbi_url}" frameborder="0" allowFullScreen="true"></iframe>
+        """, unsafe_allow_html=True)
 
 # PAGE 5----------------------------------
 if selected == "Predictor de Precios": 
