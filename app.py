@@ -5,6 +5,7 @@ from sklearn.model_selection import train_test_split
 from streamlit_option_menu import option_menu
 import joblib
 train_model_forest = joblib.load('modelo_train.pkl')
+train_model_new = joblib.load('modelo_train_new.pkl')
 from plotly.offline import iplot, init_notebook_mode
 import cufflinks
 cufflinks.go_offline(connected=True)
@@ -48,7 +49,7 @@ if selected == "Información":
         components.html(html_data, height=600)
     
     st.markdown("""
-            ### Seleccione lo que mas le interese:              
+            ### Seleccione lo que más le interese:              
         """)
 
     # ---------------------TABS (pestañas)----------------------#
@@ -74,7 +75,7 @@ if selected == "Información":
         st.write('Tipos de habitaciones')
         st.image('graficos/tipos_propriedades.png', use_column_width=True)
 
-        st.write('Número de Alojados')
+        st.write('Número de Viajeros')
         st.image('graficos/Acomodates.png', use_column_width=True)
 
     with tab2:
@@ -186,42 +187,75 @@ if selected == "Power Bi":
 # PAGE 5----------------------------------
 if selected == "Predictor de Precios": 
 
-    # Função para prever preço
+    # Función para predecir precio
     def predict_price(model, input_data):
         prediction = model.predict([input_data])
         return prediction[0]
 
-    # Configurar o Streamlit
+    # Configurar Streamlit
     st.title("Previsión de Precios Airbnb")
     st.write("Introduce tus datos para predecir el precio:")
 
-    # Lista de vecindarios
-    neighbourhoods = ['','Kauai', 'Honolulu', 'Maui', 'Hawaii']
-    room_types = ['','Entire home/apt', 'Private room', 'Shared room', 'Hotel room']
-    availability = ['','10','30','60','120','240','365']
+    # Botón de interruptor para cambiar entre modelos
+    st.write("Selecciona el tipo de predicción:")
+    switch_label = st.radio("", ("Nuevos Emprendimientos", "Viajeros"))
 
-    # Coletar entrada do usuário
-    neighbourhood = st.selectbox("Vecindario", neighbourhoods)
-    minimum_nights = st.number_input("Mínimo de Noches permitidas de la estancia", min_value=0)
-    room_type = st.selectbox("Tipo de Habitacion", room_types)
-    number_of_reviews = st.number_input("Número de Reviews totales recibidos", min_value=0)
-    reviews_per_month = st.number_input("Reviews recibidos por Mes", min_value=0)
-    availability_365 = st.selectbox("Disponibilidad en el Año", availability)
+    # Elegir el modelo basado en la selección
+    if switch_label == "Nuevos Emprendimientos":
+        st.subheader("Página para Nuevos Emprendimientos")
+        neighbourhoods = ['','Kauai', 'Honolulu', 'Maui', 'Hawaii']
+        room_types = ['','Casa/Apartamento entero', 'Habitación privada', 'Habitación compartida', 'Habitación de hotel']
+        availability = ['','10','30','60','120','240','365']
 
-    # Mapeamento de vecindarios para números
-    neighbourhood_mapping = {name: idx for idx, name in enumerate(neighbourhoods)}
-    neighbourhood_number = neighbourhood_mapping[neighbourhood]
-    # Mapeamento de roomtype para números
-    room_type_mapping = {name: idx for idx, name in enumerate(room_types)}
-    room_type_number = room_type_mapping[room_type]
+        # Colectar entrada del usuario
+        neighbourhood = st.selectbox("Vecindario", neighbourhoods)
+        minimum_nights = st.number_input("Mínimo de Noches permitidas de la estancia", min_value=0)
+        room_type = st.selectbox("Tipo de Habitacion", room_types)
+        availability_365 = st.selectbox("Disponibilidad en el Año", availability)
 
-    # Preparar os dados de entrada
-    input_data = [neighbourhood_number, room_type_number, minimum_nights, number_of_reviews, reviews_per_month, availability_365]
+        # Mapeo de vecindarios a números
+        neighbourhood_mapping = {name: idx for idx, name in enumerate(neighbourhoods)}
+        neighbourhood_number = neighbourhood_mapping[neighbourhood]
+        # Mapeo de tipos de habitación a números
+        room_type_mapping = {name: idx for idx, name in enumerate(room_types)}
+        room_type_number = room_type_mapping[room_type]
 
-    # Prever o preço com base nos dados de entrada
-    if st.button("Predecir el Precio"):
-        predicted_price = predict_price(train_model_forest, input_data)
-        st.write(f"El precio previsto es: ${predicted_price:.2f}")
+        # Preparar los datos de entrada
+        input_data = [neighbourhood_number, room_type_number, minimum_nights, availability_365]
+
+        # Predecir el precio basado en los datos de entrada
+        if st.button("Predecir el Precio"):
+            predicted_price = predict_price(train_model_new, input_data)
+            st.write(f"El precio previsto es: ${predicted_price:.2f}")
+    else:
+        st.subheader("Página para Predicción de Existentes")
+        # Lista de vecindarios
+        neighbourhoods = ['','Kauai', 'Honolulu', 'Maui', 'Hawaii']
+        room_types = ['','Casa/Apartamento entero', 'Habitación privada', 'Habitación compartida', 'Habitación de hotel']
+        availability = ['','10','30','60','120','240','365']
+
+        # Colectar entrada del usuario
+        neighbourhood = st.selectbox("Vecindario", neighbourhoods)
+        minimum_nights = st.number_input("Mínimo de Noches permitidas de la estancia", min_value=0)
+        room_type = st.selectbox("Tipo de Habitacion", room_types)
+        number_of_reviews = st.number_input("Número de Reviews totales recibidos", min_value=0)
+        reviews_per_month = st.number_input("Reviews recibidos por Mes", min_value=0)
+        availability_365 = st.selectbox("Disponibilidad en el Año", availability)
+
+        # Mapeo de vecindarios a números
+        neighbourhood_mapping = {name: idx for idx, name in enumerate(neighbourhoods)}
+        neighbourhood_number = neighbourhood_mapping[neighbourhood]
+        # Mapeo de tipos de habitación a números
+        room_type_mapping = {name: idx for idx, name in enumerate(room_types)}
+        room_type_number = room_type_mapping[room_type]
+
+        # Preparar los datos de entrada
+        input_data = [neighbourhood_number, room_type_number, minimum_nights, number_of_reviews, reviews_per_month, availability_365]
+
+        # Predecir el precio basado en los datos de entrada
+        if st.button("Predecir el Precio"):
+            predicted_price = predict_price(train_model_forest, input_data)
+            st.write(f"El precio previsto es: ${predicted_price:.2f}")
 
 
 # Adicionar CSS al app Streamlit
