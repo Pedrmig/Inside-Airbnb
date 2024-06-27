@@ -22,7 +22,7 @@ st.set_page_config(
 with st.sidebar:
     selected = option_menu(
         menu_title = "Main Menu",
-        options = ["Home","Información","Precio",'Opiniones',"Power Bi", 'Predictor de Precios'],
+        options = ["Home","Información","Precios",'Opiniones',"Power Bi", 'Predictor de Precios'],
         icons = ["house","book",'coin','table',"bar-chart","calculator"],
         menu_icon = "cast",
         default_index = 0,)
@@ -31,10 +31,11 @@ with st.sidebar:
 
 # PAGE 1-------------------------------------
 if selected == "Home":
-    st.markdown("<h1 class='centered-text'>Análisis de datos del Airbnb Hawaii</h1>", unsafe_allow_html=True)
-    st.markdown("<p class='justified-text'>Insideairbnb.com es un sitio web en el que se publican conjuntos de datos extraídos de la web de 'instantáneas' de ciudades. He descargado los archivos de Hawaii de la situación del 6 de diciembre de 2018.</p>", unsafe_allow_html=True)
-    st.markdown("<p class='justified-text'>Pensé que era un conjunto de datos divertido para asumir. Además de la disputa de datos básicos y las tramas.</p>", unsafe_allow_html=True)
-    st.markdown("<p class='justified-text'>También he agregado <strong>mapas interactivos de Folium, gráficos interactivos de tramas y extracción de texto de los comentarios de revisión.</strong></p>", unsafe_allow_html=True)
+ 
+    st.markdown("<h1 class='centered-text-pg1'>Análisis de datos del Airbnb Hawaii</h1>", unsafe_allow_html=True)
+    st.markdown("<p class='justified-text-pg1'>Identificamos un problema y nos dedicamos a resolverlo. Utilizando datos de Insideairbnb.com, hemos analizado el mercado de Airbnb en Hawaii a partir de instantáneas del 6 de diciembre de 2018.</p>", unsafe_allow_html=True)
+    st.markdown("<p class='justified-text-pg1'>Este conjunto de datos ofrece una oportunidad única para explorar y visualizar tendencias clave en el alquiler de propiedades.</p>", unsafe_allow_html=True)
+    st.markdown("<p class='justified-text-pg1'>Hemos incorporado <strong>mapas interactivos de Folium, gráficos dinámicos y análisis de texto de los comentarios</strong> para una comprensión más profunda.</p>", unsafe_allow_html=True)
     st.image('https://imgur.com/qrVfcpS.png', use_column_width=True)
     st.image('https://imgur.com/TWlePLO.jpg', use_column_width=True)
     st.markdown("<p class='images-text'>imagenes: https://w0.peakpx.com/wallpaper/963/58/HD-wallpaper-hawaiian-waves-waves-nature-beaches-hawaii.jpg</p>", unsafe_allow_html=True)
@@ -124,7 +125,7 @@ if selected == "Información":
 
 
 # PAGE 3----------------------------------
-if selected == "Precio":
+if selected == "Precios":
     st.markdown('### Precios')
     st.markdown('Abajo tenemos um mapa con el precio medio por vecindad, puede hacer zoom para ver más detalles:')
     
@@ -290,6 +291,20 @@ css = """
         color: White;  
         margin-top: 10px;
     }
+    .centered-text-pg1 {
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .justified-text-pg1 {
+            text-align: justify;
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
 </style>
 """
 st.markdown(css, unsafe_allow_html=True)
+
+
