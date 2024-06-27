@@ -21,7 +21,7 @@ st.set_page_config(
 with st.sidebar:
     selected = option_menu(
         menu_title = "Main Menu",
-        options = ["Home","Informacion","Precio",'Evaluaciones',"Power Bi", 'Predictor de Precios'],
+        options = ["Home","Información","Precio",'Opiniones',"Power Bi", 'Predictor de Precios'],
         icons = ["house","book",'coin','table',"bar-chart","calculator"],
         menu_icon = "cast",
         default_index = 0,)
@@ -40,9 +40,9 @@ if selected == "Home":
     st.markdown("<p class='images-text'>imagenes: https://www.adonde-y-cuando.es/site/images/illustration/hawai_642.jpg </p>", unsafe_allow_html=True)
 
 # PAGE 2-------------------------------------
-if selected == "Informacion":
+if selected == "Información":
 
-    st.markdown("<p class='subtitle'>Aquí puedes ver los diferentes alojamientos que se ofrecen y dónde están ubicados. Acércate en el mapa para ver más detalles:'</p>", unsafe_allow_html=True)
+    st.markdown("<p class='subtitle'>Aquí puedes ver los diferentes alojamientos que se ofrecen en las diferentes islas y dónde están ubicados. Acércate en el mapa para ver con más detalles:'</p>", unsafe_allow_html=True)
     with open("maps/map1.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
         components.html(html_data, height=600)
@@ -53,7 +53,7 @@ if selected == "Informacion":
 
     # ---------------------TABS (pestañas)----------------------#
     tab1, tab2, tab3 = st.tabs(
-        ['Acomodaciones','Potencial Ilegales','Volcanes']) 
+        ['Acomodaciones','Potencialmente Ilegal','Volcanes']) 
     with tab1:
         
         ##  1. Acomodaciones
@@ -68,7 +68,7 @@ if selected == "Informacion":
             html_data = f.read()
         components.html(html_data, height=450)
    
-        st.write('Tipos de Propriedads')
+        st.write('Tipos de Propriedades')
         st.image('graficos/tipos_propriedades_hawaii.png', use_column_width=True)
 
         st.write('Tipos de habitaciones')
@@ -115,17 +115,17 @@ if selected == "Informacion":
             
         # 4. Vulcanes
         st.markdown('### Volcanes') 
-        st.markdown("<p class='justified-text'>Mismo que poco probable que un volcán entre en erupción en Hawaii, es importante saber que la isla es un volcán en sí mismo.</p>", unsafe_allow_html=True)
         st.markdown("<p class='justified-text'>Hawaii es un archipiélago de islas volcánicas en el Océano Pacífico. Las islas son el resultado de la actividad volcánica que comenzó hace millones de años.</p>", unsafe_allow_html=True)
         st.markdown("<p class='justified-text'>La isla de Hawaii es el volcán más grande y activo del mundo.</p>", unsafe_allow_html=True)
         st.markdown("<p class='justified-text'>Es un volcán en escudo, lo que significa que es un volcán grande y de forma redondeada.</p>", unsafe_allow_html=True)
+        st.markdown("<p class='justified-text'>Las islas de Hawaii cuentan actualmente con 5 volcanes (Mauna Loa, Kohala, Hulalai, Kilaue y Mauna Kea) 3 de ellos activos. Mauna Loa no entraba en erupción desde 1984, pero tuvo una erupción sin víctimas mortales en 2022.</p>", unsafe_allow_html=True)
         st.image('https://static.temblor.net/wp-content/uploads/2018/05/hawaii-sp-7.jpg', use_column_width=True)
 
 
 # PAGE 3----------------------------------
 if selected == "Precio":
     st.markdown('### Precios')
-    st.markdown('Abajo tenemos um mapa con el precio medio por vecindad, zoom para ver más detalles:')
+    st.markdown('Abajo tenemos um mapa con el precio medio por vecindad, puede hacer zoom para ver más detalles:')
     
     with open("maps/map3.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
@@ -149,7 +149,7 @@ if selected == "Precio":
     st.image('graficos/precioxhabitacion_swarmplot.png', use_column_width=True)
 
 # PAGE 3----------------------------------
-if selected == "Evaluaciones":
+if selected == "Opiniones":
 
     st.markdown("<p class='subtitles'>Puntaje Promedio de Revisión de Ubicación por Vecindario (con al menos 10 revisiones)</p>", unsafe_allow_html=True)
     st.image('graficos/review_score_price.png', use_column_width=True)
@@ -192,8 +192,8 @@ if selected == "Predictor de Precios":
         return prediction[0]
 
     # Configurar o Streamlit
-    st.title("Prevision de Preços Airbnb")
-    st.write("Insira los datos para prever ell precio:")
+    st.title("Previsión de Precios Airbnb")
+    st.write("Introduce tus datos para predecir el precio:")
 
     # Lista de vecindarios
     neighbourhoods = ['','Kauai', 'Honolulu', 'Maui', 'Hawaii']
@@ -202,11 +202,11 @@ if selected == "Predictor de Precios":
 
     # Coletar entrada do usuário
     neighbourhood = st.selectbox("Vecindario", neighbourhoods)
-    minimum_nights = st.number_input("Minimo de Notches permitida de la estancia", min_value=0)
+    minimum_nights = st.number_input("Mínimo de Noches permitidas de la estancia", min_value=0)
     room_type = st.selectbox("Tipo de Habitacion", room_types)
-    number_of_reviews = st.number_input("Numero de Reviews totales recibidos", min_value=0)
+    number_of_reviews = st.number_input("Número de Reviews totales recibidos", min_value=0)
     reviews_per_month = st.number_input("Reviews recibidos por Mes", min_value=0)
-    availability_365 = st.selectbox("Avaliable en el Año", availability)
+    availability_365 = st.selectbox("Disponibilidad en el Año", availability)
 
     # Mapeamento de vecindarios para números
     neighbourhood_mapping = {name: idx for idx, name in enumerate(neighbourhoods)}
@@ -219,7 +219,7 @@ if selected == "Predictor de Precios":
     input_data = [neighbourhood_number, room_type_number, minimum_nights, number_of_reviews, reviews_per_month, availability_365]
 
     # Prever o preço com base nos dados de entrada
-    if st.button("Prever Precio"):
+    if st.button("Predecir el Precio"):
         predicted_price = predict_price(train_model_forest, input_data)
         st.write(f"El precio previsto es: ${predicted_price:.2f}")
 
