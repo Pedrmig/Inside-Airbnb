@@ -303,10 +303,11 @@ css = """
         font-weight: bold;
         margin-bottom: 20px;
         font-family: 'Lato', sans-serif;
-        color: #fff; 
+        color: #fff;
+        width: 90%; 
     }
     .justified-text-pg1 {
-        text-align: justify;
+        text-align: center;
         font-size: 1.2em;
         line-height: 1.5;
         margin-bottom: 15px;
