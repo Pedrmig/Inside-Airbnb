@@ -1,3 +1,7 @@
+https://pedrmig-inside-airbnb.streamlit.app/
+
+
+
 Files: https://insideairbnb.com/get-the-data/
 
 ![image](https://github.com/Pedrmig/Inside-Airbnb/assets/102622659/419fc380-10b8-4ee5-a8f4-c55f4042b328)
