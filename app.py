@@ -303,7 +303,7 @@ css = """
         font-weight: bold;
         margin-bottom: 20px;
         font-family: 'Lato', sans-serif;
-        color: #fff; /* Branco para melhor contraste em fundo preto */
+        color: #fff; 
     }
     .justified-text-pg1 {
         text-align: justify;
@@ -311,8 +311,8 @@ css = """
         line-height: 1.5;
         margin-bottom: 15px;
         font-family: 'Lato', sans-serif;
-        color: #ddd; /* Cinza claro para melhor legibilidade em fundo preto */
-        width: 80%; /* Ocupa 80% da largura da tela */
+        color: #ddd; 
+        width: 90%; 
         margin-left: auto;
         margin-right: auto;
     }
