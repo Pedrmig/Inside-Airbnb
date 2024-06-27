@@ -32,10 +32,15 @@ with st.sidebar:
 # PAGE 1-------------------------------------
 if selected == "Home":
  
-    st.markdown("<h1 class='centered-text-pg1'>Análisis de datos del Airbnb Hawaii</h1>", unsafe_allow_html=True)
-    st.markdown("<p class='justified-text-pg1'>Identificamos un problema y nos dedicamos a resolverlo. Utilizando datos de Insideairbnb.com, hemos analizado el mercado de Airbnb en Hawaii a partir de instantáneas del 6 de diciembre de 2018.</p>", unsafe_allow_html=True)
-    st.markdown("<p class='justified-text-pg1'>Este conjunto de datos ofrece una oportunidad única para explorar y visualizar tendencias clave en el alquiler de propiedades.</p>", unsafe_allow_html=True)
-    st.markdown("<p class='justified-text-pg1'>Hemos incorporado <strong>mapas interactivos de Folium, gráficos dinámicos y análisis de texto de los comentarios</strong> para una comprensión más profunda.</p>", unsafe_allow_html=True)
+    st.markdown("""
+<div class="container">
+    <h1 class='centered-text-pg1'>Análisis de datos del Airbnb Hawaii</h1>
+    <p class='justified-text-pg1'>Identificamos un problema y nos dedicamos a resolverlo. Utilizando datos de Insideairbnb.com, hemos analizado el mercado de Airbnb en Hawaii a partir de instantáneas del 6 de diciembre de 2018.</p>
+    <p class='justified-text-pg1'>Este conjunto de datos ofrece una oportunidad única para explorar y visualizar tendencias clave en el alquiler de propiedades.</p>
+    <p class='justified-text-pg1'>Hemos incorporado <strong>mapas interactivos de Folium, gráficos dinámicos y análisis de texto de los comentarios</strong> para una comprensión más profunda.</p>
+</div>
+""", unsafe_allow_html=True)
+
     st.image('https://imgur.com/qrVfcpS.png', use_column_width=True)
     st.image('https://imgur.com/TWlePLO.jpg', use_column_width=True)
     st.markdown("<p class='images-text'>imagenes: https://w0.peakpx.com/wallpaper/963/58/HD-wallpaper-hawaiian-waves-waves-nature-beaches-hawaii.jpg</p>", unsafe_allow_html=True)
@@ -291,18 +296,27 @@ css = """
         color: White;  
         margin-top: 10px;
     }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
     .centered-text-pg1 {
-            text-align: center;
-            font-size: 2em;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .justified-text-pg1 {
-            text-align: justify;
-            font-size: 1.2em;
-            line-height: 1.5;
-            margin-bottom: 15px;
-        }
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-family: 'Poppins', sans-serif;
+        color: #333;
+    }
+    .justified-text-pg1 {
+        text-align: justify;
+        font-size: 1.2em;
+        line-height: 1.5;
+        margin-bottom: 15px;
+        font-family: 'Poppins', sans-serif;
+        color: #555;
+    }
+    .container {
+        width: 60%;
+        margin: 0 auto;
+    }
 </style>
 """
 st.markdown(css, unsafe_allow_html=True)
