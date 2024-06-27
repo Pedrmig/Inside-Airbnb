@@ -146,9 +146,7 @@ if selected == "Precio":
     with open("graficos/precio_habitacion_vecindario_box.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
     components.html(html_data, height=450)
-    with open("graficos/precio_habitacion_vecindario_swarmplot.html", "r", encoding='utf-8') as f:     
-        html_data = f.read()
-    components.html(html_data, height=450)
+    st.image('graficos/precioxhabitacion_swarmplot.png', use_column_width=True)
 
 # PAGE 3----------------------------------
 if selected == "Avaliaciones":
