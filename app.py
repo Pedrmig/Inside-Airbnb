@@ -172,7 +172,7 @@ if selected == "Opiniones":
     st.markdown("<p class='subtitles'>A continuación puede ver la distribución de puntajes de todas esas categorías.'</p>", unsafe_allow_html=True)
     st.image('graficos/puntuaciones.png', use_column_width=True)
 
-    st.markdown("<p class='subtitles'>A continuación, podemos ver que la parte más pequeña de los listados en Hawaii tienen un anfitrión que es Superanfitrión.</p>", unsafe_allow_html=True)
+    st.markdown("<p class='subtitles'>Seguidamente, podemos ver que la parte más pequeña de los listados en Hawaii tienen un anfitrión que es Superanfitrión.</p>", unsafe_allow_html=True)
     st.image('graficos/list_superhost.png', use_column_width=True)   
 
     st.markdown("<p class='subtitles'>Palabras más comunes en los comentarios de los huéspedes em Hawaii:'</p>", unsafe_allow_html=True)
