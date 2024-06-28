@@ -170,13 +170,13 @@ if selected == "Precios":
     with open("graficos/Average_Price_2_persons.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
     components.html(html_data, height=450)
-    st.markdown("<p class='sub-figure'> texto </p>", unsafe_allow_html=True)
+    st.markdown("<p class='sub-figure'> En el gráfico interactivo podemos ver el precio promedio por día para dos personas. Durante la mayor parte del periodo los precios se mantienen salvo pequeñas fluctuaciones que pueden ser atribuidas a la oferta y la demanda, pero hay aumentos y caídas más abruptas que pueden indicar algún evento especial o una circunstancia extraordinaria que hace que la demanda se incremente temporalmente. </p>", unsafe_allow_html=True)
         
     st.markdown('### Precio promedio por vecindario y tipo de habitación')
     with open("graficos/precio_habitacion_vecindario_box.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
     components.html(html_data, height=450)
-    st.markdown("<p class='sub-figure'> texto </p>", unsafe_allow_html=True)
+    st.markdown("<p class='sub-figure'> Existe gran variabilidad en los precios dentro de cada grupo de vecindario. En Kauai observamos un precio muy alto en private room. En general, parece que las casas o apartamentos enteros y las habitaciones privadas son las que dominan el mercado.  </p>", unsafe_allow_html=True)
     
     st.markdown('### Precio promedio por vecindario y tipo de habitación')
     st.image('graficos/precioxhabitacion_swarmplot.png', use_column_width=True)
