@@ -312,7 +312,6 @@ if selected == "Predictor de Precios":
             predicted_price = predict_price(train_model_forest, input_data)
             st.write(f"El precio previsto es: ${predicted_price:.2f}")
 
-
 # Adicionar CSS al app Streamlit
 css = """
 <style>
