@@ -305,13 +305,11 @@ css = """
         color: White;  
         margin-top: 10px;
     }
-    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-    .centered-title-pg1 {
+        .centered-title-pg1 {
         text-align: center;
         font-size: 2em;
         font-weight: bold;
         margin-bottom: 20px;
-        font-family: 'Lato', sans-serif;
         color: #fff;
         width: 90%; 
     }
@@ -320,7 +318,6 @@ css = """
         font-size: 1.2em;
         line-height: 1.5;
         margin-bottom: 15px;
-        font-family: 'Lato', sans-serif;
         color: #ddd; 
         width: 90%; 
         margin-left: auto;
@@ -340,6 +337,12 @@ css = """
     .container {
         width: 100%;
         margin: 0 auto;
+    }
+    .sub-figure {
+        text-align: right;
+        color: white;
+        font-size: 30px;
+        margin-bottom: 40px; 
     }
 </style>
 """
