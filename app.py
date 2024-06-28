@@ -196,14 +196,14 @@ if selected == "Opiniones":
     st.markdown(" ### Puntaje Promedio de Revisión de Ubicación por Vecindario (con al menos 10 revisiones)")
     st.image('graficos/review_score_price.png', use_column_width=True)
     
-    st.markdown("<p class='sub-figure'>Además de las reseñas escritas, los invitados pueden enviar una calificación de estrellas general y un conjunto de calificaciones de estrellas de categoría. Los huéspedes pueden dar calificaciones sobre: </p>", unsafe_allow_html=True)
-    st.markdown("<p class='sub-figure'> Experiencia general. ¿Cuál fue su experiencia en general?  </p>", unsafe_allow_html=True)
-    st.markdown("<p class='sub-figure'> Limpieza. ¿Sentiste que tu espacio estaba limpio y ordenado?  </p>", unsafe_allow_html=True)
-    st.markdown("<p class='sub-figure'> Precisión. ¿Con qué precisión su página de listado representó su espacio?  </p>", unsafe_allow_html=True)
-    st.markdown("<p class='sub-figure'> Valor. ¿Sintió que su listado proporcionó un buen valor por el precio?  </p>", unsafe_allow_html=True)
-    st.markdown("<p class='sub-figure'> Comunicación. ¿Qué tan bien se comunicó con su anfitrión antes y durante su estadía?  </p>", unsafe_allow_html=True)
-    st.markdown("<p class='sub-figure'> Llegada. ¿Qué tan bien fue su registro?  </p>", unsafe_allow_html=True)
-    st.markdown("<p class='sub-figure'> Ubicación. ¿Cómo te sentiste en el barrio?  </p>", unsafe_allow_html=True)
+    st.markdown("<p class='sub-figure2'>Además de las reseñas escritas, los invitados pueden enviar una calificación de estrellas general y un conjunto de calificaciones de estrellas de categoría. Los huéspedes pueden dar calificaciones sobre: </p>", unsafe_allow_html=True)
+    st.markdown("<p class='sub-figure2'> Experiencia general. ¿Cuál fue su experiencia en general?  </p>", unsafe_allow_html=True)
+    st.markdown("<p class='sub-figure2'> Limpieza. ¿Sentiste que tu espacio estaba limpio y ordenado?  </p>", unsafe_allow_html=True)
+    st.markdown("<p class='sub-figure2'> Precisión. ¿Con qué precisión su página de listado representó su espacio?  </p>", unsafe_allow_html=True)
+    st.markdown("<p class='sub-figure2'> Valor. ¿Sintió que su listado proporcionó un buen valor por el precio?  </p>", unsafe_allow_html=True)
+    st.markdown("<p class='sub-figure2'> Comunicación. ¿Qué tan bien se comunicó con su anfitrión antes y durante su estadía?  </p>", unsafe_allow_html=True)
+    st.markdown("<p class='sub-figure2'> Llegada. ¿Qué tan bien fue su registro?  </p>", unsafe_allow_html=True)
+    st.markdown("<p class='sub-figure2'> Ubicación. ¿Cómo te sentiste en el barrio?  </p>", unsafe_allow_html=True)
     
     st.markdown(" ### A continuación puede ver la distribución de puntajes de todas esas categorías.")
     st.image('graficos/puntuaciones.png', use_column_width=True)
@@ -370,6 +370,12 @@ css = """
         color: white;
         font-size: 13px;
         margin-bottom: 45px; 
+    }
+    .sub-figure2 {
+        text-align: left;
+        color: white;
+        font-size: 13px;
+        margin-bottom: 10px; 
     }
     
 </style>
