@@ -193,7 +193,7 @@ if selected == "Opiniones":
     </div>    
     """, unsafe_allow_html=True) 
 
-    st.markdown("<p class='subtitles'>Puntaje Promedio de Revisión de Ubicación por Vecindario (con al menos 10 revisiones)</p>", unsafe_allow_html=True)
+    st.markdown(" ###Puntaje Promedio de Revisión de Ubicación por Vecindario (con al menos 10 revisiones)")
     st.image('graficos/review_score_price.png', use_column_width=True)
     
     st.markdown('Además de las reseñas escritas, los invitados pueden enviar una calificación de estrellas general y un conjunto de calificaciones de estrellas de categoría. Los huéspedes pueden dar calificaciones sobre:')
@@ -204,13 +204,14 @@ if selected == "Opiniones":
     st.markdown('* Comunicación. ¿Qué tan bien se comunicó con su anfitrión antes y durante su estadía?')
     st.markdown('* Llegada. ¿Qué tan bien fue su registro?')
     st.markdown('* Ubicación. ¿Cómo te sentiste en el barrio?')
-    st.markdown("<p class='subtitles'>A continuación puede ver la distribución de puntajes de todas esas categorías.'</p>", unsafe_allow_html=True)
+    
+    st.markdown(" ### A continuación puede ver la distribución de puntajes de todas esas categorías.")
     st.image('graficos/puntuaciones.png', use_column_width=True)
 
-    st.markdown("<p class='subtitles'>Seguidamente, podemos ver que la parte más pequeña de los listados en Hawaii tienen un anfitrión que es Superanfitrión.</p>", unsafe_allow_html=True)
+    st.markdown(" ### Seguidamente, podemos ver que la parte más pequeña de los listados en Hawaii tienen un anfitrión que es Superanfitrión.")
     st.image('graficos/list_superhost.png', use_column_width=True)   
 
-    st.markdown("<p class='subtitles'>Palabras más comunes en los comentarios de los huéspedes</p>", unsafe_allow_html=True)
+    st.markdown(" ### Palabras más comunes en los comentarios de los huéspedes ")
     st.image('graficos/wordcloud.png', use_column_width=True)
 
 
