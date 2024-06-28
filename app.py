@@ -52,6 +52,7 @@ if selected == "Información":
     st.markdown("""
 <div class="container">
     <h1 class='centered-title-pg1'>Información</h1>
+    <p class='centered-text-pg1'>Las islas de Hawaii están ubicadas en el océano pacífico y forman parte de EEUU. Están formadas por 8 islas, pero nosotros vamos a centrarnos en las islas más pobladas y en aquellas en las que se permite el alquiler vacacional como son: Hawaii, Maui, Honolulu y Kauai.'<p>
     <p class='centered-text-pg1'>Aquí puedes ver los diferentes alojamientos que se ofrecen en las diferentes islas y dónde están ubicados. Acércate en el mapa para ver con más detalle:'</p>
 </div>
 """, unsafe_allow_html=True)
