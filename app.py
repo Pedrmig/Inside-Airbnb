@@ -88,7 +88,7 @@ if selected == "Información":
         st.write('Cantidad de anuncios por dia')
         with open("graficos/listings_available_by_date.html", "r", encoding='utf-8') as f:     
             html_data = f.read()
-        components.html(html_data, height=450, width=490)
+        components.html(html_data, height=450, width=1000)
         
     with tab2:
                 
