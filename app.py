@@ -150,7 +150,7 @@ if selected == "Precios":
     </div>    
     """, unsafe_allow_html=True)    
    
-    st.markdown('## Abajo tenemos um mapa con el precio medio por vecindad, puede hacer zoom para ver más detalles:')
+    st.markdown('### Abajo tenemos um mapa con el precio medio por vecindad, puede hacer zoom para ver más detalles:')
     
     with open("maps/map3.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
