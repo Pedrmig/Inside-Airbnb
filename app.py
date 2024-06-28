@@ -49,7 +49,7 @@ if selected == "Home":
 # PAGE 2-------------------------------------
 if selected == "Información":
 
-    st.markdown("<p class='subtitle'>Aquí puedes ver los diferentes alojamientos que se ofrecen en las diferentes islas y dónde están ubicados. Acércate en el mapa para ver con más detalles:'</p>", unsafe_allow_html=True)
+    st.markdown("<p class='subtitle'>Aquí puedes ver los diferentes alojamientos que se ofrecen en las diferentes islas y dónde están ubicados. Acércate en el mapa para ver con más detalle:'</p>", unsafe_allow_html=True)
     with open("maps/map1.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
         components.html(html_data, height=600)
@@ -70,7 +70,7 @@ if selected == "Información":
         st.write('Número de anuncios por vecindario')
         st.image('graficos/anuncios_por_vecindario.png', use_column_width=True)
    
-        st.write('Cantidade de anuncios por dia')
+        st.write('Cantidad de anuncios por dia')
         with open("graficos/listings_available_by_date.html", "r", encoding='utf-8') as f:     
             html_data = f.read()
         components.html(html_data, height=450)
