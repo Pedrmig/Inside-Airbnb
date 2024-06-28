@@ -155,6 +155,8 @@ if selected == "Precios":
     with open("maps/map3.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
     components.html(html_data, height=450)
+        st.markdown("<p class='sub-figure'> </p>", unsafe_allow_html=True)
+
 
     st.markdown('### Precio promedio por vecindario')
     st.image('graficos/precio_medio_vecindario.png', use_column_width=True)
