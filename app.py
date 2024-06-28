@@ -311,7 +311,8 @@ if selected == "Predictor de Precios":
         if st.button("Predecir el Precio"):
             predicted_price = predict_price(train_model_forest, input_data)
             st.write(f"El precio previsto es: ${predicted_price:.2f}")
-            
+
+st.markdown("<p class='sub-figure'></p>", unsafe_allow_html=True)
 st.write("Es importante tener claras tus intenciones a la hora de viajar a las islas de Hawaii, ya que dependiendo de si tu viaje es única y exclusivamente por ocio, o si buscas emprender tu propio negocio, los precios van a variar, porque cuando viajas buscas unas reseñas que harán aumentar el precio de tu estancia y en cambio si lo que buscas es emprender tu negocio no tendrá reseñas ya que acaba de comenzar.")
 
 # Adicionar CSS al app Streamlit
