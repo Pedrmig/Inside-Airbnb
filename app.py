@@ -187,6 +187,12 @@ if selected == "Precios":
 # PAGE 4----------------------------------
 if selected == "Opiniones":
 
+    st.markdown("""
+    <div class="container">
+        <h1 class='centered-title-pg1'>Opiniones</h1>
+    </div>    
+    """, unsafe_allow_html=True) 
+
     st.markdown("<p class='subtitles'>Puntaje Promedio de Revisión de Ubicación por Vecindario (con al menos 10 revisiones)</p>", unsafe_allow_html=True)
     st.image('graficos/review_score_price.png', use_column_width=True)
     
