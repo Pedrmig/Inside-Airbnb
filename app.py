@@ -27,6 +27,13 @@ with st.sidebar:
         menu_icon = "cast",
         default_index = 0,)
 
+#lógica para detectar el tema del navegador
+theme = st.get_option("theme.base")
+if theme == "light":
+    text_color = "var(--text-color-light)"
+else:
+    text_color = "var(--text-color-dark)"
+
 # creando el contenido de las páginas de acuerdo a la opción seleccionada
 
 # PAGE 1-------------------------------------
@@ -324,12 +331,24 @@ css = """
         background-repeat: no-repeat;
         background-position: center;
     }
+        /* styles.css */
+    :root {
+        --text-color-light: #000000;
+        --text-color-dark:  #ddd;  
+    }
+
+    body[data-theme="light"] .centered-text-pg5 {
+        color: var(--text-color-light);
+    }
+
+    body[data-theme="dark"] .centered-text-pg5 {
+        color: var(--text-color-dark);
+    }
     .header-black {
         color: black;
     }
         .centered-text {
         text-align: center;
-        color: white;
         font-size: 40px;
         margin-bottom: 40px; 
     }
@@ -339,12 +358,10 @@ css = """
     }
     .images-text {
         font-size: 9px;
-        color: grey;  
         margin-top: 00px;
     }
     .subtitles {
         font-size: 25px;
-        color: White;  
         margin-top: 10px;
     }
         .centered-title-pg1 {
@@ -352,7 +369,6 @@ css = """
         font-size: 2em;
         font-weight: bold;
         margin-bottom: 20px;
-        color: #fff;
         width: 90%; 
     }
     .justified-text-pg1 {
@@ -360,7 +376,6 @@ css = """
         font-size: 1.2em;
         line-height: 1.5;
         margin-bottom: 15px;
-        color: #ddd; 
         width: 90%; 
         margin-left: auto;
         margin-right: auto;
@@ -371,7 +386,6 @@ css = """
         line-height: 1.5;
         margin-bottom: 15px;
         font-family: 'Lato', sans-serif;
-        color: #ddd; 
         width: 90%; 
         margin-left: auto;
         margin-right: auto;
@@ -382,7 +396,6 @@ css = """
         line-height: 1.5;
         font-family: sans-serif;
         margin-bottom: 5px;
-        color: #ddd; 
         width: 90%; 
         margin-left: auto;
         margin-right: auto;
@@ -393,13 +406,11 @@ css = """
     }
     .sub-figure {
         text-align: left;
-        color: white;
         font-size: 13px;
         margin-bottom: 45px; 
     }
     .sub-figure2 {
         text-align: left;
-        color: white;
         font-size: 20px;
         margin-bottom: 10px; 
     }
