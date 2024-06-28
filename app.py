@@ -113,10 +113,10 @@ if selected == "Información":
         st.write('Condado de Kauai: ')
         st.write('Donde ya no se permite alquileres a corto plazo fuera de las áreas o distritos zonificados para hoteles. ')
             
-        st.markdown('** Encontrando Potenciales hoteles Ilegales')
+        st.markdown('## Encontrando Potenciales hoteles Ilegales')
         st.image('graficos/govserv1.png', use_column_width=False)
         
-        st.markdown('** Encontrando las cordenadas de los potenciales hoteles Ilegales')
+        st.markdown('## Encontrando las cordenadas de los potenciales hoteles Ilegales')
         st.write('Parece muy probable que todas las habitaciones privadas que ofrece Roompicks estén en el mismo edificio ya que tienen la misma latitud y longitud. Aunque podría tener una licencia de hotel (ya que cuenta con 79 propiedades) no sabemos el nombre del hotel, por lo que aconsejaríamos al municipio de Hawái que compruebe si se están infringiendo las normas.')
         st.image('graficos/govserv2.png', use_column_width=True)
             
