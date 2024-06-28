@@ -131,10 +131,10 @@ if selected == "Información":
         st.markdown("""
             ### Volcanes              
         """)
-        st.write('Hawaii es un archipiélago de islas volcánicas en el Océano Pacífico. Las islas son el resultado de la actividad volcánica que comenzó hace millones de años.)
-        st.write('La isla de Hawaii es el volcán más grande y activo del mundo.)
-        st.write('Es un volcán en escudo, lo que significa que es un volcán grande y de forma redondeada.</p>
-        st.write('Las islas de Hawaii cuentan actualmente con 5 volcanes (Mauna Loa, Kohala, Hulalai, Kilaue y Mauna Kea) 3 de ellos activos. Mauna Loa no entraba en erupción desde 1984, pero tuvo una erupción sin víctimas mortales en 2022.)
+        st.write('Hawaii es un archipiélago de islas volcánicas en el Océano Pacífico. Las islas son el resultado de la actividad volcánica que comenzó hace millones de años.')
+        st.write('La isla de Hawaii es el volcán más grande y activo del mundo.')
+        st.write('Es un volcán en escudo, lo que significa que es un volcán grande y de forma redondeada.')
+        st.write('Las islas de Hawaii cuentan actualmente con 5 volcanes (Mauna Loa, Kohala, Hulalai, Kilaue y Mauna Kea) 3 de ellos activos. Mauna Loa no entraba en erupción desde 1984, pero tuvo una erupción sin víctimas mortales en 2022.')
         st.image('https://static.temblor.net/wp-content/uploads/2018/05/hawaii-sp-7.jpg', use_column_width=True)
 
 
