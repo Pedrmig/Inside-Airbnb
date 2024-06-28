@@ -113,17 +113,18 @@ if selected == "Información":
         st.write('Condado de Kauai: ')
         st.write('Donde ya no se permite alquileres a corto plazo fuera de las áreas o distritos zonificados para hoteles. ')
             
-        st.markdown('## Encontrando Potenciales hoteles Ilegales')
+        st.markdown('#### Encontrando Potenciales hoteles Ilegales')
         st.image('graficos/govserv1.png', use_column_width=False)
         
-        st.markdown('## Encontrando las cordenadas de los potenciales hoteles Ilegales')
+        st.markdown('#### Encontrando las cordenadas de los potenciales hoteles Ilegales')
         st.write('Parece muy probable que todas las habitaciones privadas que ofrece Roompicks estén en el mismo edificio ya que tienen la misma latitud y longitud. Aunque podría tener una licencia de hotel (ya que cuenta con 79 propiedades) no sabemos el nombre del hotel, por lo que aconsejaríamos al municipio de Hawái que compruebe si se están infringiendo las normas.')
         st.image('graficos/govserv2.png', use_column_width=True)
             
-        st.write('Cantidad de Anuncions por Anfitrión')
+        st.markdown('#### Cantidad de Anuncions por Anfitrión')
         st.image('graficos/govserv3.png', use_column_width=True)
 
-        st.write('Algunos Anfitriones son claramente profesionales')
+        st.markdown('#### Algunos Anfitriones son claramente profesionales')
+        st.write('También existen casos extremos de anfitriones con hasta 488 listados, lo que indica que son claramente profesionales o empresas de gestión de propiedades, por lo que las políticas deberían enfocarse en estos casos extremos para evitar que los gestores profesionales dominen el mercado, asegurando así también un acceso justo a la vivienda y limitando posibles abusos o excesos en los alquileres, por lo que nuestra recomendación es, que es importante considerar políticas que permitan un equilibrio entre los propietarios individuales y los profesionales limitando el número de propiedades para un sólo anfitrión. ')
         st.image('graficos/govserv4.png', use_column_width=True)
         
     
