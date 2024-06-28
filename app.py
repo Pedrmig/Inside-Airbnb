@@ -83,17 +83,21 @@ if selected == "Información":
    
         st.write('Tipos de Propriedades')
         st.image('graficos/tipos_propriedades_hawaii.png', use_column_width=True)
-
+        st.markdown("<p class='sub-figure'>texto nuevo.'</p>", unsafe_allow_html=True)
+        
         st.write('Tipos de habitaciones')
         st.image('graficos/tipos_propriedades.png', use_column_width=True)
+        st.markdown("<p class='sub-figure'>texto nuevo.'</p>", unsafe_allow_html=True)
 
         st.write('Número de Viajeros')
         st.image('graficos/Acomodates.png', use_column_width=True)
+        st.markdown("<p class='sub-figure'>texto nuevo.'</p>", unsafe_allow_html=True)
 
         st.write('Cantidad de anuncios por dia')
         with open("graficos/listings_available_by_date.html", "r", encoding='utf-8') as f:     
             html_data = f.read()
         components.html(html_data, height=450, width=950)
+        st.markdown("<p class='sub-figure'>texto nuevo.'</p>", unsafe_allow_html=True)
         
     with tab2:
                 
@@ -336,7 +340,7 @@ css = """
     .sub-figure {
         text-align: right;
         color: white;
-        font-size: 30px;
+        font-size: 10px;
         margin-bottom: 40px; 
     }
     
