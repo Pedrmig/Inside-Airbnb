@@ -37,7 +37,7 @@ if selected == "Home":
     <h1 class='centered-title-pg1'>Análisis de datos del Airbnb Hawaii</h1>
     <p class='centered-text-pg1'>En cuanto al análisis de datos, pudimos identificar un problema usando los datos de Insideairbnb.com por lo que nos enfocamos en resolverlo y analizar el mercado de airbnb en Hawaii desde 2018.</p>
     <p class='centered-text-pg1'>Este conjunto de datos ofrece una oportunidad única para explorar y visualizar tendencias clave en el alquiler de propiedades.</p>
-    <p class='centered-text-pg1'>Se han incorporado mapas interactivos de Folium, gráficos dinámicos y análisis de texto de los comentarios para una comprensión más profunda.</strong> para una comprensión más profunda.</p>
+    <p class='centered-text-pg1'>Se han incorporado mapas interactivos de Folium, gráficos dinámicos y análisis de texto de los comentarios para una comprensión más profunda.</strong></p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -400,7 +400,7 @@ css = """
     .sub-figure2 {
         text-align: left;
         color: white;
-        font-size: 13px;
+        font-size: 20px;
         margin-bottom: 10px; 
     }
     
