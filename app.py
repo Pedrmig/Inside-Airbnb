@@ -52,8 +52,8 @@ if selected == "Información":
     st.markdown("""
 <div class="container">
     <h1 class='centered-title-pg1'>Información</h1>
-    <p class='centered-text-pg1'>Las islas de Hawaii están ubicadas en el océano pacífico y forman parte de EEUU. Están formadas por 8 islas, pero nosotros vamos a centrarnos en las islas más pobladas y en aquellas en las que se permite el alquiler vacacional como son: Hawaii, Maui, Honolulu y Kauai.'<p>
-    <p class='centered-text-pg1'>Aquí puedes ver los diferentes alojamientos que se ofrecen en las diferentes islas y dónde están ubicados. Acércate en el mapa para ver con más detalle:'</p>
+    <p class='centered-text-pg1'>Las islas de Hawaii están ubicadas en el océano pacífico y forman parte de EEUU. Están formadas por 8 islas, pero nosotros vamos a centrarnos en las islas más pobladas y en aquellas en las que se permite el alquiler vacacional como son: Hawaii, Maui, Honolulu y Kauai.<p>
+    <p class='centered-text-pg1'>Aquí puedes ver los diferentes alojamientos que se ofrecen en las diferentes islas y dónde están ubicados. Acércate en el mapa para ver con más detalle:</p>
 </div>
 """, unsafe_allow_html=True)
     
@@ -86,7 +86,7 @@ if selected == "Información":
                
         st.write('Tipos de habitaciones')
         st.image('graficos/tipos_propriedades.png', use_column_width=True)
-        st.markdown("<p class='sub-figure'>texto nuevo.'</p>", unsafe_allow_html=True)
+        st.markdown("<p class='sub-figure'>Los tipos de habitaciones disponibles en Airbnb generalmente se clasifican en 4: Casa o apartamento completo, habitación privada con áreas comunes, habitación de hotel y habitación compartida, aunque como podemos observar, generalmente los alquileres son de condominios enteros. </p>", unsafe_allow_html=True)
 
         st.write('Número de Viajeros')
         st.image('graficos/Acomodates.png', use_column_width=True)
