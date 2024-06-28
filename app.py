@@ -193,7 +193,7 @@ if selected == "Opiniones":
     </div>    
     """, unsafe_allow_html=True) 
 
-    st.markdown(" ###Puntaje Promedio de Revisión de Ubicación por Vecindario (con al menos 10 revisiones)")
+    st.markdown(" ### Puntaje Promedio de Revisión de Ubicación por Vecindario (con al menos 10 revisiones)")
     st.image('graficos/review_score_price.png', use_column_width=True)
     
     st.markdown('Además de las reseñas escritas, los invitados pueden enviar una calificación de estrellas general y un conjunto de calificaciones de estrellas de categoría. Los huéspedes pueden dar calificaciones sobre:')
