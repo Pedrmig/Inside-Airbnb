@@ -245,9 +245,12 @@ if selected == "Predictor de Precios":
         prediction = model.predict([input_data])
         return prediction[0]
 
-    # Configurar Streamlit
-    st.title("Previsión de Precios Airbnb")
-    st.write("Introduce tus datos para predecir el precio:")
+    st.markdown("""
+    <div class="container">
+        <h1 class='centered-title-pg1'>Previsión de Precios Airbnb</h1>
+        <h1 class='centered-text-pg1'>Por último y para facilitar la información se ha generado un predictor de precios donde dependiendo de tus intenciones a la hora de viajar puedas hacerte una idea de los alojamientos que más te interesan y disfrutar al máximo de tu estancia en las Islas de Hawaii.</h1>
+    </div>    
+    """, unsafe_allow_html=True) 
 
     # Botón de interruptor para cambiar entre modelos
     st.write("Selecciona el tipo de predicción:")
