@@ -78,13 +78,12 @@ if selected == "Información":
         
         st.write('Número de anuncios por vecindario')
         st.image('graficos/anuncios_por_vecindario.png', use_column_width=True)
-        st.markdown("<p class='sub-figure'>En las diferentes islas, podemos encontrar distintos tipos de alojamientos, generalmente predominan los alquileres de condominios enteros, pero también podemos encontrar algunas más sorprendentes como casas en los árboles, casas pequeñas, yurts o estancias en granjas.'</p>", unsafe_allow_html=True)
-        
+        st.markdown("<p class='sub-figure'>texto nuevo.'</p>", unsafe_allow_html=True)        
    
         st.write('Tipos de Propriedades')
         st.image('graficos/tipos_propriedades_hawaii.png', use_column_width=True)
-        st.markdown("<p class='sub-figure'>texto nuevo.'</p>", unsafe_allow_html=True)
-        
+        st.markdown("<p class='sub-figure'>En las diferentes islas, podemos encontrar distintos tipos de alojamientos, generalmente predominan los alquileres de condominios enteros, pero también podemos encontrar algunas más sorprendentes como casas en los árboles, casas pequeñas, yurts o estancias en granjas.'</p>", unsafe_allow_html=True)
+               
         st.write('Tipos de habitaciones')
         st.image('graficos/tipos_propriedades.png', use_column_width=True)
         st.markdown("<p class='sub-figure'>texto nuevo.'</p>", unsafe_allow_html=True)
@@ -338,10 +337,10 @@ css = """
         margin: 0 auto;
     }
     .sub-figure {
-        text-align: right;
+        text-align: left;
         color: white;
-        font-size: 10px;
-        margin-bottom: 40px; 
+        font-size: 15px;
+        margin-bottom: 45px; 
     }
     
 </style>
