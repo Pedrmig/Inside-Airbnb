@@ -208,7 +208,7 @@ if selected == "Opiniones":
     
     st.markdown(" ### A continuación puede ver la distribución de puntajes de todas esas categorías.")
     st.image('graficos/puntuaciones.png', use_column_width=True)
-    st.markdown("<p class='sub-figure'> texto </p>", unsafe_allow_html=True)
+    st.markdown("<p class='sub-figure'> Los gráficos muestran el puntaje para las diferentes categorías como ubicación, limpieza, valor, comunicación, entrada o la exactitud. Se ha seleccionado datos de Hosts con más de 10 reseñas. Hay que mencionar que los huéspedes suelen puntuar por encima de 4 estrellas. </p>", unsafe_allow_html=True)
 
 
     st.markdown(" ### Seguidamente, podemos ver que la parte más pequeña de los listados en Hawaii tienen un anfitrión que es Superanfitrión.")
@@ -217,7 +217,7 @@ if selected == "Opiniones":
 
     st.markdown(" ### Palabras más comunes en los comentarios de los huéspedes ")
     st.image('graficos/wordcloud.png', use_column_width=True)
-    st.markdown("<p class='sub-figure'> texto </p>", unsafe_allow_html=True)
+    st.markdown("<p class='sub-figure'> Como observamos en la imagen, las palabras más repetidas fueron: great, place, stay, location, beach, clean, would, everything o nice </p>", unsafe_allow_html=True)
 
 
 # PAGE 5----------------------------------
