@@ -90,7 +90,7 @@ if selected == "Información":
 
         st.write('Número de Viajeros')
         st.image('graficos/Acomodates.png', use_column_width=True)
-        st.markdown("<p class='sub-figure'>texto nuevo.'</p>", unsafe_allow_html=True)
+        st.markdown("<p class='sub-figure'>En este caso, es llamativo que en la mayoría de los casos, el número de alojados es de 4 personas, seguido de 6 y posteriormente 2 personas.</p>", unsafe_allow_html=True)
 
         st.write('Cantidad de anuncios por dia')
         with open("graficos/listings_available_by_date.html", "r", encoding='utf-8') as f:     
