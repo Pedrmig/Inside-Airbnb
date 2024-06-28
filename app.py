@@ -76,11 +76,6 @@ if selected == "Información":
         st.write('Número de anuncios por vecindario')
         st.image('graficos/anuncios_por_vecindario.png', use_column_width=True)
    
-        st.write('Cantidad de anuncios por dia')
-        with open("graficos/listings_available_by_date.html", "r", encoding='utf-8') as f:     
-            html_data = f.read()
-        components.html(html_data, height=450)
-   
         st.write('Tipos de Propriedades')
         st.image('graficos/tipos_propriedades_hawaii.png', use_column_width=True)
 
@@ -90,6 +85,11 @@ if selected == "Información":
         st.write('Número de Viajeros')
         st.image('graficos/Acomodates.png', use_column_width=True)
 
+        st.write('Cantidad de anuncios por dia')
+        with open("graficos/listings_available_by_date.html", "r", encoding='utf-8') as f:     
+            html_data = f.read()
+        components.html(html_data, height=450)
+        
     with tab2:
                 
         ## 2. Government services
@@ -102,9 +102,7 @@ if selected == "Información":
         
         st.write('Encontrando las cordenadas de los potenciales hoteles Ilegales')
         st.image('graficos/govserv2.png', use_column_width=True)
-        
-        st.markdown('### Efectos no deseados de los anfitriones profesionales?')
-        
+            
         st.write('Cantidad de Anuncions por Anfitrión')
         st.image('graficos/govserv3.png', use_column_width=True)
 
