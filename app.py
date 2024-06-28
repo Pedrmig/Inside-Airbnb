@@ -78,7 +78,7 @@ if selected == "Información":
         
         st.write('Número de anuncios por vecindario')
         st.image('graficos/anuncios_por_vecindario.png', use_column_width=True)
-        st.markdown("<p class='sub-figure'>texto nuevo.'</p>", unsafe_allow_html=True)        
+        st.markdown("<p class='sub-figure'>En cuanto al número de anuncios por vecindario, destaca de forma considerable Primary Urban Center, seguido de Lahaina o Kihei-Makena.'</p>", unsafe_allow_html=True)        
    
         st.write('Tipos de Propriedades')
         st.image('graficos/tipos_propriedades_hawaii.png', use_column_width=True)
