@@ -163,19 +163,19 @@ if selected == "Precios":
     st.markdown('### Precio promedio por vecindario')
     with open("graficos/precio_vecindario.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
-    components.html(html_data, height=450)
+    components.html(html_data)
     st.markdown("<p class='sub-figure'> En Kauai la distribución de precios tiene una forma más uniforme. En Honolulu tiene un pico muy definido alrededor de los $800 lo que indica una alta concentración de precios en ese rango. Maui es similar a Kauai con una distribución amplia y una dispersión menos que Kauai. Hawaii muestra una concentración de precios bajos y un pico notable. </p>", unsafe_allow_html=True)
         
     st.markdown('### Precio promedio por dia para 2 personas') 
     with open("graficos/Average_Price_2_persons.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
-    components.html(html_data, height=450)
+    components.html(html_data)
     st.markdown("<p class='sub-figure'> texto </p>", unsafe_allow_html=True)
         
     st.markdown('### Precio promedio por vecindario y tipo de habitación')
     with open("graficos/precio_habitacion_vecindario_box.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
-    components.html(html_data, height=450)
+    components.html(html_data)
     st.markdown("<p class='sub-figure'> texto </p>", unsafe_allow_html=True)
     
     st.markdown('### Precio promedio por vecindario y tipo de habitación')
