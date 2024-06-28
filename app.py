@@ -74,8 +74,12 @@ if selected == "Información":
 
         st.markdown('### Acomodaciones')
         
+        st.write('Las regulaciones sobre los tipos de alquileres a través de plataformas como Airbnb pueden tener un impacto significativo en el mercado de alquiler a corto plazo en Hawaii., donde se aplican regulaciones estrictas a corto plazo. La mayoría de las áreas residenciales están prohibidas para alquileres de menos de 30 días, a menos que el propietario tenga un permiso de (B&B) o una Unidad Transitoria (STU), pero estos permisos son limitados y están sujetos a ciertos requisitos.')
+        
         st.write('Número de anuncios por vecindario')
         st.image('graficos/anuncios_por_vecindario.png', use_column_width=True)
+        st.markdown("<p class='sub-figure'>texto nuevo.'</p>", unsafe_allow_html=True)
+        
    
         st.write('Tipos de Propriedades')
         st.image('graficos/tipos_propriedades_hawaii.png', use_column_width=True)
@@ -335,6 +339,7 @@ css = """
         font-size: 30px;
         margin-bottom: 40px; 
     }
+    
 </style>
 """
 st.markdown(css, unsafe_allow_html=True)
