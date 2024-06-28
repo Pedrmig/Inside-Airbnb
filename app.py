@@ -253,7 +253,6 @@ if selected == "Predictor de Precios":
     """, unsafe_allow_html=True) 
 
     # Botón de interruptor para cambiar entre modelos
-    st.write("Selecciona el tipo de predicción:")
     switch_label = st.radio("", ("Nuevos Emprendimientos", "Viajeros"))
 
     # Elegir el modelo basado en la selección
