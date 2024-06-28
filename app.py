@@ -144,7 +144,12 @@ if selected == "Información":
 
 # PAGE 3----------------------------------
 if selected == "Precios":
-    st.markdown('### Precios')
+    st.markdown("""
+    <div class="container">
+        <h1 class='centered-title-pg1'>Precios</h1>
+    </div>    
+    """, unsafe_allow_html=True)    
+   
     st.markdown('Abajo tenemos um mapa con el precio medio por vecindad, puede hacer zoom para ver más detalles:')
     
     with open("maps/map3.html", "r", encoding='utf-8') as f:     
