@@ -205,6 +205,8 @@ if selected == "Opiniones":
     st.markdown("<p class='sub-figure2'> Comunicación. ¿Qué tan bien se comunicó con su anfitrión antes y durante su estadía?  </p>", unsafe_allow_html=True)
     st.markdown("<p class='sub-figure2'> Llegada. ¿Qué tan bien fue su registro?  </p>", unsafe_allow_html=True)
     st.markdown("<p class='sub-figure2'> Ubicación. ¿Cómo te sentiste en el barrio?  </p>", unsafe_allow_html=True)
+    st.markdown("<p class='sub-figure'></p>", unsafe_allow_html=True)
+
     
     st.markdown(" ### A continuación puede ver la distribución de puntajes de todas esas categorías.")
     st.image('graficos/puntuaciones.png', use_column_width=True)
