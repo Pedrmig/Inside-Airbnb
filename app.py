@@ -227,9 +227,9 @@ if selected == "Power Bi":
     st.markdown("""
     <div class="container">
         <h1 class='centered-title-pg1'>PowerBI</h1>
-        <h1 class='centered-text-pg1'>Este es un dashboard de PowerBI incrustado en una aplicación de Streamlit. </h1>
-        <h1 class='centered-text-pg1'>El panel de Power BI es completamente interactivo distribuido en dos hojas. </h1>
-        <h1 class='centered-text-pg1'>En la primera hoja, podemos observar el rendimiento del negocio, y en la segunda, la satisfacción del cliente.</h1>
+        <h1 class='centered-text-pg5'>Este es un dashboard de PowerBI incrustado en una aplicación de Streamlit. </h1>
+        <h1 class='centered-text-pg5'>El panel de Power BI es completamente interactivo distribuido en dos hojas. </h1>
+        <h1 class='centered-text-pg5'>En la primera hoja, podemos observar el rendimiento del negocio, y en la segunda, la satisfacción del cliente.</h1>
     </div>    
     """, unsafe_allow_html=True)
  
@@ -368,6 +368,16 @@ css = """
         line-height: 1.5;
         margin-bottom: 15px;
         font-family: 'Lato', sans-serif;
+        color: #ddd; 
+        width: 90%; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .centered-text-pg5 {
+        text-align: center;
+        font-size: 1.2em;
+        line-height: 1.5;
+        font-family: sans-serif;
         color: #ddd; 
         width: 90%; 
         margin-left: auto;
