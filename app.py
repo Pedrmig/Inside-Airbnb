@@ -190,7 +190,7 @@ if selected == "Opiniones":
     st.markdown("""
     <div class="container">
         <h1 class='centered-title-pg1'>Opiniones</h1>
-        <h1 class='centered-text'>Este apartado está diseñado para en análisis y la evaluación de las distintas opiniones de cada una de las islas.</h1>
+        <h1 class='centered-text-pg1'>Este apartado está diseñado para en análisis y la evaluación de las distintas opiniones de cada una de las islas.</h1>
     </div>    
     """, unsafe_allow_html=True) 
     
