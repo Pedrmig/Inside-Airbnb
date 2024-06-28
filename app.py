@@ -126,13 +126,12 @@ if selected == "Información":
             <div class="container">
         <h1 class='centered-text-pg1'>Volcanes</h1>
             <p class='justified-text-pg1'>Hawaii es un archipiélago de islas volcánicas en el Océano Pacífico. Las islas son el resultado de la actividad volcánica que comenzó hace millones de años.</h1>
-            <p class='justified-text-pg1'>La isla de Hawaii es el volcán más grande y activo del mundo.</p>", unsafe_allow_html=True)
+            <p class='justified-text-pg1'>La isla de Hawaii es el volcán más grande y activo del mundo.</p>
             <p class='justified-text-pg1'>Es un volcán en escudo, lo que significa que es un volcán grande y de forma redondeada.</p>
             <p class='justified-text-pg1'>Las islas de Hawaii cuentan actualmente con 5 volcanes (Mauna Loa, Kohala, Hulalai, Kilaue y Mauna Kea) 3 de ellos activos. Mauna Loa no entraba en erupción desde 1984, pero tuvo una erupción sin víctimas mortales en 2022.</p>
-            st.image('https://static.temblor.net/wp-content/uploads/2018/05/hawaii-sp-7.jpg', use_column_width=True)
             </div>
         """, unsafe_allow_html=True)
-        
+        st.image('https://static.temblor.net/wp-content/uploads/2018/05/hawaii-sp-7.jpg', use_column_width=True)
 
 
 # PAGE 3----------------------------------
