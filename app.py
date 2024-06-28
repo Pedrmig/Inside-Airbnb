@@ -190,9 +190,10 @@ if selected == "Opiniones":
     st.markdown("""
     <div class="container">
         <h1 class='centered-title-pg1'>Opiniones</h1>
+        <h1 class='centered-title-pg1'>Este apartado está diseñado para en análisis y la evaluación de las distintas opiniones de cada una de las islas.</h1>
     </div>    
     """, unsafe_allow_html=True) 
-    st.markdown(" ##### Este apartado está diseñado para en análisis y la evaluación de las distintas opiniones de cada una de las islas.")
+    
     st.markdown(" ### Puntaje Promedio de Revisión de Ubicación por Vecindario (con al menos 10 revisiones)")
     st.image('graficos/review_score_price.png', use_column_width=True)
     
