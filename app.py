@@ -232,13 +232,7 @@ if selected == "Power Bi":
         <h1 class='centered-text-pg1'>En la primera hoja, podemos observar el rendimiento del negocio, y en la segunda, la satisfacción del cliente.</h1>
     </div>    
     """, unsafe_allow_html=True)
-    
-    
-    
-    
-    st.markdown("""
-            ## Este es un dashboard de PowerBI incrustado en una aplicación de Streamlit.
-    """)
+ 
     powerbi_url = "https://app.powerbi.com/view?r=eyJrIjoiZmI2YmVjNmUtZjI3My00OTVmLWE1NGItNzY0ODNhNmJmM2M1IiwidCI6IjhhZWJkZGI2LTM0MTgtNDNhMS1hMjU1LWI5NjQxODZlY2M2NCIsImMiOjl9"
     st.markdown(f"""
             <iframe width="100%" height="600" src="{powerbi_url}" frameborder="0" allowFullScreen="true"></iframe>
