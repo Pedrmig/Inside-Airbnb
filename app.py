@@ -98,17 +98,18 @@ if selected == "Información":
         st.write('Hawaii tiene regulaciones diferentes de un condado a otro, y todas ellas están diseñadas para limitar el número de propiedades en alquiler. (https://www.hostaway.com/blog/airbnb-rules-in-hawaii/)')
             
         st.write('Encontrando Potenciales hoteles Ilegales')
-        
+        st.image('graficos/govserv1.png', use_column_width=True)
         
         st.write('Encontrando las cordenadas de los potenciales hoteles Ilegales')
-        
+        st.image('graficos/govserv2.png', use_column_width=True)
         
         st.markdown('### Efectos no deseados de los anfitriones profesionales?')
         
         st.write('Cantidad de Anuncions por Anfitrión')
-        
+        st.image('graficos/govserv3.png', use_column_width=True)
 
         st.write('Algunos Anfitriones son claramente profesionales')
+        st.image('graficos/govserv4.png', use_column_width=True)
         
     
     with tab3:
