@@ -96,7 +96,7 @@ if selected == "Información":
         with open("graficos/listings_available_by_date.html", "r", encoding='utf-8') as f:     
             html_data = f.read()
         components.html(html_data, height=450, width=950)
-        st.markdown("<p class='sub-figure'>texto nuevo.'</p>", unsafe_allow_html=True)
+        st.markdown("<p class='sub-figure'>En la cantidad de anuncios disponibles por fecha, observamos un incremento de mayo a septiembre de 2024 y un posterior descenso en cuanto hasta marzo de 2025. Puedes situar el ratón encima de nuestra gráfica para poder ir viendo la fecha exacta y la cantidad de comentarios que hubo.</p>", unsafe_allow_html=True)
         
     with tab2:
                 
