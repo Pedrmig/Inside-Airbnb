@@ -136,7 +136,7 @@ if selected == "Precios":
     st.markdown('Precio promedio por vecindario')
     st.image('graficos/precio_medio_vecindario.png', use_column_width=True)
     
-    st.markdown('Una visualizacíon distinta del precio promedio por vecindario')
+    st.markdown('Precio promedio por vecindario')
     with open("graficos/precio_vecindario.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
     components.html(html_data, height=450, width=950)
@@ -151,6 +151,7 @@ if selected == "Precios":
         html_data = f.read()
     components.html(html_data, height=450, width=950)
     
+    st.markdown('Precio promedio por vecindario y tipo de habitación')
     st.image('graficos/precioxhabitacion_swarmplot.png', use_column_width=True)
 
 # PAGE 4----------------------------------
