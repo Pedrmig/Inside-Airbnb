@@ -34,10 +34,10 @@ if selected == "Home":
  
     st.markdown("""
 <div class="container">
-    <h1 class='centered-text-pg1'>Análisis de datos del Airbnb Hawaii</h1>
-    <p class='justified-text-pg1'>En cuanto al análisis de datos, pudimos identificar un problema usando los datos de Insideairbnb.com por lo que nos enfocamos en resolverlo y analizar el mercado de airbnb en Hawaii desde 2018.</p>
-    <p class='justified-text-pg1'>Este conjunto de datos ofrece una oportunidad única para explorar y visualizar tendencias clave en el alquiler de propiedades.</p>
-    <p class='justified-text-pg1'>Se han incorporado mapas interactivos de Folium, gráficos dinámicos y análisis de texto de los comentarios para una comprensión más profunda.</strong> para una comprensión más profunda.</p>
+    <h1 class='centered-title-pg1'>Análisis de datos del Airbnb Hawaii</h1>
+    <p class='centered-text-pg1'>En cuanto al análisis de datos, pudimos identificar un problema usando los datos de Insideairbnb.com por lo que nos enfocamos en resolverlo y analizar el mercado de airbnb en Hawaii desde 2018.</p>
+    <p class='centered-text-pg1'>Este conjunto de datos ofrece una oportunidad única para explorar y visualizar tendencias clave en el alquiler de propiedades.</p>
+    <p class='centered-text-pg1'>Se han incorporado mapas interactivos de Folium, gráficos dinámicos y análisis de texto de los comentarios para una comprensión más profunda.</strong> para una comprensión más profunda.</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -49,7 +49,13 @@ if selected == "Home":
 # PAGE 2-------------------------------------
 if selected == "Información":
 
-    st.markdown("<p class='subtitle'>Aquí puedes ver los diferentes alojamientos que se ofrecen en las diferentes islas y dónde están ubicados. Acércate en el mapa para ver con más detalle:'</p>", unsafe_allow_html=True)
+    st.markdown("""
+<div class="container">
+    <h1 class='centered-text-pg1'>Información</h1>
+    <p class='justified-text-pg1'>Aquí puedes ver los diferentes alojamientos que se ofrecen en las diferentes islas y dónde están ubicados. Acércate en el mapa para ver con más detalle:'</p>
+</div>
+""", unsafe_allow_html=True)
+    
     with open("maps/map1.html", "r", encoding='utf-8') as f:     
         html_data = f.read()
         components.html(html_data, height=600)
@@ -124,7 +130,7 @@ if selected == "Información":
         
         st.markdown("""
             <div class="container">
-        <h1 class='centered-text-pg1'>Volcanes</h1>
+        <h1 class='centered-title-pg1'>Volcanes</h1>
             <p class='justified-text-pg1'>Hawaii es un archipiélago de islas volcánicas en el Océano Pacífico. Las islas son el resultado de la actividad volcánica que comenzó hace millones de años.</h1>
             <p class='justified-text-pg1'>La isla de Hawaii es el volcán más grande y activo del mundo.</p>
             <p class='justified-text-pg1'>Es un volcán en escudo, lo que significa que es un volcán grande y de forma redondeada.</p>
@@ -302,7 +308,7 @@ css = """
         margin-top: 10px;
     }
     @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-    .centered-text-pg1 {
+    .centered-title-pg1 {
         text-align: center;
         font-size: 2em;
         font-weight: bold;
@@ -312,6 +318,17 @@ css = """
         width: 90%; 
     }
     .justified-text-pg1 {
+        text-align: justify;
+        font-size: 1.2em;
+        line-height: 1.5;
+        margin-bottom: 15px;
+        font-family: 'Lato', sans-serif;
+        color: #ddd; 
+        width: 90%; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .centered-text-pg1 {
         text-align: center;
         font-size: 1.2em;
         line-height: 1.5;
