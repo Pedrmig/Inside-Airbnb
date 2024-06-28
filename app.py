@@ -213,7 +213,7 @@ if selected == "Opiniones":
 
     st.markdown(" ### Seguidamente, podemos ver que la parte más pequeña de los listados en Hawaii tienen un anfitrión que es Superanfitrión.")
     st.image('graficos/list_superhost.png', use_column_width=True)   
-    st.markdown("<p class='sub-figure'> texto </p>", unsafe_allow_html=True)
+    st.markdown("<p class='sub-figure'> El gráfico muestra que hay más ofertas sin la designación de superhost, por lo que aunque sabemos que son numerosos, no todos lo tienen. Reservar con superhost en Hawaii puede aumentar la probabilidad de la experiencia, pero siempre es importante tener claro, que hay que evaluar todos los factores como pueden ser: precio, disponibilidad o necesidades específicas de cada viaje, ya que consideramos que el distintivo de superhost no es un marcador significativo a tener en cuenta a la hora de realizar la reserva.  </p>", unsafe_allow_html=True)
 
     st.markdown(" ### Palabras más comunes en los comentarios de los huéspedes ")
     st.image('graficos/wordcloud.png', use_column_width=True)
