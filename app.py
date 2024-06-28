@@ -52,7 +52,7 @@ if selected == "Información":
     st.markdown("""
 <div class="container">
     <h1 class='centered-title-pg1'>Información</h1>
-    <p class='justified-text-pg1'>Aquí puedes ver los diferentes alojamientos que se ofrecen en las diferentes islas y dónde están ubicados. Acércate en el mapa para ver con más detalle:'</p>
+    <p class='centered-text-pg1'>Aquí puedes ver los diferentes alojamientos que se ofrecen en las diferentes islas y dónde están ubicados. Acércate en el mapa para ver con más detalle:'</p>
 </div>
 """, unsafe_allow_html=True)
     
