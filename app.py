@@ -180,7 +180,7 @@ if selected == "Precios":
     
     st.markdown('### Precio promedio por vecindario y tipo de habitación')
     st.image('graficos/precioxhabitacion_swarmplot.png', use_column_width=True)
-    st.markdown("<p class='sub-figure'> texto </p>", unsafe_allow_html=True)
+    st.markdown("<p class='sub-figure'> Observamos que los precios varían considerablemente en las diferentes islas pero hay una tendencia general a que los apartamentos completos sean más caros y más comunes. Nos hemos encontrado con numerosos outliers, especialmente en Maui y Honolulu, lo que indica que todos estos valores atípicos, son propiedades significativamente más caras que el promedio.  </p>", unsafe_allow_html=True)
 
 # PAGE 4----------------------------------
 if selected == "Opiniones":
