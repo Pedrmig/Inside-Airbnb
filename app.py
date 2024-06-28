@@ -192,7 +192,7 @@ if selected == "Opiniones":
         <h1 class='centered-title-pg1'>Opiniones</h1>
     </div>    
     """, unsafe_allow_html=True) 
-
+    st.markdown(" ### Este apartado está diseñado para en análisis y la evaluación de las distintas opiniones de cada una de las islas.")
     st.markdown(" ### Puntaje Promedio de Revisión de Ubicación por Vecindario (con al menos 10 revisiones)")
     st.image('graficos/review_score_price.png', use_column_width=True)
     
@@ -207,12 +207,16 @@ if selected == "Opiniones":
     
     st.markdown(" ### A continuación puede ver la distribución de puntajes de todas esas categorías.")
     st.image('graficos/puntuaciones.png', use_column_width=True)
+    st.markdown("<p class='sub-figure'> texto </p>", unsafe_allow_html=True)
+
 
     st.markdown(" ### Seguidamente, podemos ver que la parte más pequeña de los listados en Hawaii tienen un anfitrión que es Superanfitrión.")
     st.image('graficos/list_superhost.png', use_column_width=True)   
+    st.markdown("<p class='sub-figure'> texto </p>", unsafe_allow_html=True)
 
     st.markdown(" ### Palabras más comunes en los comentarios de los huéspedes ")
     st.image('graficos/wordcloud.png', use_column_width=True)
+    st.markdown("<p class='sub-figure'> texto </p>", unsafe_allow_html=True)
 
 
 # PAGE 5----------------------------------
