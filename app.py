@@ -78,11 +78,11 @@ if selected == "Información":
         
         st.write('Número de anuncios por vecindario')
         st.image('graficos/anuncios_por_vecindario.png', use_column_width=True)
-        st.markdown("<p class='sub-figure'>En cuanto al número de anuncios por vecindario, destaca de forma considerable Primary Urban Center, seguido de Lahaina o Kihei-Makena.'</p>", unsafe_allow_html=True)        
+        st.markdown("<p class='sub-figure'>En cuanto al número de anuncios por vecindario, destaca de forma considerable Primary Urban Center, seguido de Lahaina o Kihei-Makena.</p>", unsafe_allow_html=True)        
    
         st.write('Tipos de Propriedades')
         st.image('graficos/tipos_propriedades_hawaii.png', use_column_width=True)
-        st.markdown("<p class='sub-figure'>En las diferentes islas, podemos encontrar distintos tipos de alojamientos, generalmente predominan los alquileres de condominios enteros, pero también podemos encontrar algunas más sorprendentes como casas en los árboles, casas pequeñas, yurts o estancias en granjas.'</p>", unsafe_allow_html=True)
+        st.markdown("<p class='sub-figure'>En las diferentes islas, podemos encontrar distintos tipos de alojamientos, generalmente predominan los alquileres de condominios enteros, pero también podemos encontrar algunas más sorprendentes como casas en los árboles, casas pequeñas, yurts o estancias en granjas.</p>", unsafe_allow_html=True)
                
         st.write('Tipos de habitaciones')
         st.image('graficos/tipos_propriedades.png', use_column_width=True)
@@ -339,7 +339,7 @@ css = """
     .sub-figure {
         text-align: left;
         color: white;
-        font-size: 15px;
+        font-size: 13px;
         margin-bottom: 45px; 
     }
     
