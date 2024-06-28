@@ -228,7 +228,7 @@ if selected == "Power Bi":
     <div class="container">
         <h1 class='centered-title-pg1'>PowerBI</h1>
         <h1 class='centered-text-pg5'>Este es un dashboard de PowerBI incrustado en una aplicación de Streamlit. </h1>
-        <h1 class='centered-text-pg5'>El panel de Power BI es completamente interactivo distribuido en dos hojas. En la primera hoja, podemos observar el rendimiento del negocio, y en la segunda, la satisfacción del cliente.</h1>
+        <h1 class='centered-text-pg1'>El panel de Power BI es completamente interactivo distribuido en dos hojas. En la primera hoja, podemos observar el rendimiento del negocio, y en la segunda, la satisfacción del cliente.</h1>
     </div>    
     """, unsafe_allow_html=True)
  
@@ -377,7 +377,7 @@ css = """
         font-size: 1.2em;
         line-height: 1.5;
         font-family: sans-serif;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         color: #ddd; 
         width: 90%; 
         margin-left: auto;
