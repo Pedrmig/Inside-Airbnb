@@ -78,7 +78,7 @@ if selected == "Información":
         
         st.write('Número de anuncios por vecindario')
         st.image('graficos/anuncios_por_vecindario.png', use_column_width=True)
-        st.markdown("<p class='sub-figure'>texto nuevo.'</p>", unsafe_allow_html=True)
+        st.markdown("<p class='sub-figure'>En las diferentes islas, podemos encontrar distintos tipos de alojamientos, generalmente predominan los alquileres de condominios enteros, pero también podemos encontrar algunas más sorprendentes como casas en los árboles, casas pequeñas, yurts o estancias en granjas.'</p>", unsafe_allow_html=True)
         
    
         st.write('Tipos de Propriedades')
